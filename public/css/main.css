@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 20px 12px 20px;
+}
+
+.delete:hover {
+  background-color: #f44336;
+  color: white;
+  text-decoration: none;
+}
+
+.edit {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.edit:hover {
+  background-color: #6936f4;
+  color: white;
+  text-decoration: none;
+}
+
+input[type="text"] {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #fff;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0 none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #6936f4;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+tr td {
+  cursor: pointer;
+  padding: 12px 8px 12px 40px;
+  font-size: 18px;
+  transition: 0.2s;
+  position: relative;
+  border: 0 none;  
+}
+
+tr td:hover {
+  background: #ddd;
+}
+
+tr td.checked {
+  background: rgb(175, 173, 173);
+  color: #fff;
+  text-decoration: line-through;
+}
+
+tr td.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+@media (max-width: 978px) {
+  .container {
+    padding:0;
+    margin:0;
+  }
+
+  body {
+    padding:0;
+  }
+}
